@@ -2,6 +2,7 @@ from flask import Flask,request
 import os
 from firebase import firebase
 
+
 url = os.environ['url']
 def get_db_data(id):
   fdb = firebase.FirebaseApplication(url, None)
